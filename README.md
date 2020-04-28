@@ -1,12 +1,15 @@
 ﻿# Qml-Python-exe-ValidPass
-for deploy app 
-1  in command  pyrcc5 -o resource.py recursos.qrc
-2 in validador.py add  
+For deploy app
+
+1)  in command  pyrcc5 -o resource.py recursos.qrc
+
+2) in validador.py add  
  from PyQt5.QtCore import QUrl 
- import resource 
+ import resource  
  engine.load(QUrl('qrc:/main.qml')) modify the url for qrc format 
- 3 generate the .exe with the commad 
+ 
+ 3) generate the .exe with the commad 
  pyinstaller validador.py --windowed --onefile --hidden-import PyQt5.sip --hidden-import PyQt5.QtQuick
   
   
-in the dist folder is the executable
+in the dist folder is the executable.
